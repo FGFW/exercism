@@ -1,1 +1,1 @@
-var hello* = proc (): string = "Hello, World!"
+var hello* = proc :string = "Hello, World!"

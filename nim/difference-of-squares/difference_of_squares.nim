@@ -1,13 +1,13 @@
+import math
 
 proc squareOfSum*(n:int): int =
-    for i in 1..n:
-        result.inc i
-    result = result * result
+    ((n+1) * n div 2) ^ 2
 
 proc sumOfSquares*(n:int): int =
-    for i in 1..n:
-        result.inc i*i
+    (2 * n + 1) * (n + 1) * n div 6
 
 proc difference*(n:int): int =
     result = squareOfSum(n) - sumOfSquares(n)
 
+when isMainModule:
+    echo difference(100)
